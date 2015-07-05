@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="64e9b778-daf4-42f3-bc9f-6788b14f7773" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="737b391b-3f38-4c6e-8ba5-a346328960be" name="Contracts">
+      <references>
+        <reference Id="6d70aba0-9983-474e-8c22-206ef44ad978" name="Tweety.Contracts">
+          <ArtifactNode Label="Tweety.Contracts" Category="CodeSchema_Project" Id="(Assembly=../Tweety.Contracts/Tweety.Contracts.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tweety.Contracts)" Label="Tweety.Contracts.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="780df838-925b-4284-9c6b-0a17b40f35e0" name="Controllers">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c2551a3e-61e3-48f7-8e5b-69b109c405fd" direction="Forward">
+          <layerMoniker Id="737b391b-3f38-4c6e-8ba5-a346328960be" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="8b6a9b79-bfcf-44f3-b52b-419858f8b350" name="Tweety.Controllers">
+          <ArtifactNode Label="Tweety.Controllers" Category="CodeSchema_Project" Id="(Assembly=../Tweety.Controllers/Tweety.Controllers.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tweety.Controllers)" Label="Tweety.Controllers.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="ef248cc4-2bf1-44f6-ad5a-de62bc9cd1fe" name="Logic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b35d2ba3-ff7f-4c0d-b453-4efa6d64883c" direction="Forward">
+          <layerMoniker Id="737b391b-3f38-4c6e-8ba5-a346328960be" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="136c0799-5d64-4bc0-b242-6ae7b46cfad7" name="Tweety.Logic">
+          <ArtifactNode Label="Tweety.Logic" Category="CodeSchema_Project" Id="(Assembly=../Tweety.Logic/Tweety.Logic.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tweety.Logic)" Label="Tweety.Logic.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="351908ed-9664-41bc-9599-df94d267ce75" name="ConsoleUI">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="debe6f93-9859-4272-8bc0-eda44bb6112b" direction="Forward">
+          <layerMoniker Id="737b391b-3f38-4c6e-8ba5-a346328960be" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="9170c380-2780-4210-ae92-da25b6e8f370" direction="Forward">
+          <layerMoniker Id="543bef22-1696-491f-bd92-ed426cc5138b" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4021dc9b-63ad-46b7-b172-7750b786e3a7" name="Tweety.ConsoleUI">
+          <ArtifactNode Label="Tweety.ConsoleUI" Category="CodeSchema_Project" Id="(Assembly=../Tweety.ConsoleUI/Tweety.ConsoleUI.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tweety.ConsoleUI)" Label="Tweety.ConsoleUI.exe" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.exe" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="543bef22-1696-491f-bd92-ed426cc5138b" name="Unity&#xD;&#xA;(DI Framework)" requiredNamespace="Microsoft.Practices.Unity" />
+  </layers>
+</layerModel>
