@@ -17,7 +17,7 @@ namespace Tweety.UnitTests.Services
     [TestClass]
     public class TimelineReaderServiceTests
     {
-        //Fake commands
+        //Fake repository
         private IRepository<User> userRepository;
 
         //Fake entity

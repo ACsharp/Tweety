@@ -17,7 +17,7 @@ namespace Tweety.UnitTests.Services
     [TestClass]
     public class FollowerServiceTests
     {
-        //Fake commands
+        //Fake repository
         private IRepository<User> userRepository;
 
         //Fake entities

@@ -20,7 +20,7 @@ namespace Tweety.UnitTests.Services
         //Observers
         private StubObserver userRepositoryObserver;
 
-        //Fake commands
+        //Fake repository
         private IRepository<User> userRepository;
 
         //Fake entity
